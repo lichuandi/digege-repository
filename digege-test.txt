@@ -1,0 +1,36 @@
+本地新建文件测验
+推送你的新分支与数据到某个远端仓库命令:
+git push [alias] [branch]
+
+以上命令将你的 [branch] 分支推送成为 [alias] 远程仓库上的 [branch] 分支，实例如下。
+$ touch digege-test.txt      # 添加文件
+$ git add digege-test.txt 
+$ git commit -m "添加到远程"
+master 69e702d] 添加到远程
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 runoob-test.txt
+
+$ git push origin master    # 推送到 Github
+重新回到我们的 Github 仓库，可以看到文件以及提交上来了：
+
+digege@DESKTOP-MVKIG2S MINGW64 ~/digege-git-test (master)
+$ touch digege-test.txt
+
+digege@DESKTOP-MVKIG2S MINGW64 ~/digege-git-test (master)
+$ git add digege-test.txt
+
+digege@DESKTOP-MVKIG2S MINGW64 ~/digege-git-test (master)
+$ git commit -m "添加远程"
+[master 776b9ce] 添加远程
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 digege-test.txt
+
+digege@DESKTOP-MVKIG2S MINGW64 ~/digege-git-test (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 294 bytes | 98.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:lichuandi/digege-repository.git
+   119b875..776b9ce  master -> master
